@@ -246,3 +246,10 @@ const marcas = carros.reduce(function (acumulador, carro) {
   return acumulador
 }, {})
 console.log(marcas)
+
+/* SORT */ console.log(`SORT`)
+const carrosOrdenados = carros.slice().sort(function (a, b) {
+  return b.velMax - a.velMax
+})
+
+console.log(carrosOrdenados)
